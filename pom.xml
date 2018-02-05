@@ -109,16 +109,24 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<!-- mybatis generator 自动生成代码插件 -->
-            <plugin>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>1.3.2</version>
-                <configuration>
-                    <configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile>
-                    <overwrite>true</overwrite>
-                    <verbose>true</verbose>
-                </configuration>
-            </plugin>
+<!--             <plugin> -->
+<!--                 <groupId>org.mybatis.generator</groupId> -->
+<!--                 <artifactId>mybatis-generator-maven-plugin</artifactId> -->
+<!--                 <version>1.3.2</version> -->
+<!--                 <configuration> -->
+<!--                     <configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile> -->
+<!--                     <overwrite>true</overwrite> -->
+<!--                     <verbose>true</verbose> -->
+<!--                 </configuration> -->
+<!--                 <dependencies> -->
+<!--                 	sql server数据库驱动 -->
+<!-- 					<dependency> -->
+<!-- 						<groupId>net.sourceforge.jtds</groupId> -->
+<!-- 						<artifactId>jtds</artifactId> -->
+<!-- 						<version>1.2.4</version> -->
+<!-- 					</dependency> -->
+<!--                 </dependencies> -->
+<!--             </plugin> -->
 		</plugins>
 	</build>
 </project>
