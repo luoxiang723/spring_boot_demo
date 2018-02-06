@@ -27,6 +27,6 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.lx.example.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
-        <table tableName="a_yibai_person" domainObjectName="AYibaiPerson" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="lx_user" domainObjectName="LxUser" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
     </context>
 </generatorConfiguration>

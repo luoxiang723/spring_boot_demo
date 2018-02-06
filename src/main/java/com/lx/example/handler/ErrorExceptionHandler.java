@@ -17,15 +17,15 @@ public class ErrorExceptionHandler {
 	 * 统一异常处理
 	 * 
 	 * @param exception
-	 *            exception
+	 *            
 	 * @return
 	 */
 	@ExceptionHandler({ RuntimeException.class })
 	@ResponseStatus(HttpStatus.OK)
-	public ModelAndView processException(RuntimeException exception) {
-		logger.info("自定义异常处理-RuntimeException");
+	public ModelAndView processException(RuntimeException e) {
+		logger.error(e.getMessage(), e);
 		ModelAndView m = new ModelAndView();
-		m.addObject("lxRuntimeException", exception.getMessage());
+		m.addObject("lxRuntimeException", e.getMessage());
 		m.setViewName("error/5xx");
 		return m;
 	}
@@ -33,16 +33,16 @@ public class ErrorExceptionHandler {
 	/**
 	 * 统一异常处理
 	 * 
-	 * @param exception
-	 *            exception
+	 * @param e
+	 *            
 	 * @return
 	 */
 	@ExceptionHandler({ Exception.class })
 	@ResponseStatus(HttpStatus.OK)
-	public ModelAndView processException(Exception exception) {
-		logger.info("自定义异常处理-Exception");
+	public ModelAndView processException(Exception e) {
+		logger.error(e.getMessage(), e);
 		ModelAndView m = new ModelAndView();
-		m.addObject("lxException", exception.getMessage());
+		m.addObject("lxException", e.getMessage());
 		m.setViewName("error/500");
 		return m;
 	}

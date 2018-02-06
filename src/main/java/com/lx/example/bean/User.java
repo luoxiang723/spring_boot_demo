@@ -1,15 +1,7 @@
-/**
- * 2015-2016 龙果学院 (www.roncoo.com)
- */
 package com.lx.example.bean;
 
 import java.util.Date;
 
-/**
- * 实体类
- * 
- * @author wujing
- */
 public class User {
 	private int id;
 	private String name;
